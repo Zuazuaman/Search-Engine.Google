@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Search Engine</title>
+    <script async src="https://cse.google.com/cse.js?cx=83a4ba975ff464f73"></script>
+    <style>
+        /* Mengatur posisi kotak pencarian di tengah-tengah */
+        .gcse-search {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh; /* Menyesuaikan tinggi sesuai kebutuhan */
+        }
+
+        /* Mengatur posisi logo di atas kotak pencarian */
+        .gcse-search:before {
+            content: url('IndoNET.png');
+            display: block;
+            width: 100px; /* Sesuaikan ukuran logo */
+            height: 100px;
+            margin-bottom: 20px; /* Jarak antara logo dan kotak pencarian */
+        }
+    </style>
+</head>
+<body>
+    <div class="gcse-search">
+        <gcse:searchbox branding="false"></gcse:searchbox>
+    </div>
+</body>
+</html>
